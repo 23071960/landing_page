@@ -1,0 +1,40 @@
+.form {
+    border: 1px solid #ccc;
+}
+
+input, textarea {
+    width: 100%; /* Alterado para preencher a largura do formulário */
+    margin-bottom: 15px; /* Aumentado o espaçamento entre os campos */
+    padding: 10px;
+    border: 2px solid #cab9b9;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+.contato {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.titulo-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contactForm input,
+#contactForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço entre as caixas de texto */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contactForm button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#contactForm button:hover {
+    background-color: #0056b3;
+}

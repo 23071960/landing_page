@@ -1,0 +1,39 @@
+.cabeçalho {
+    background: linear-gradient(rgba(100, 149, 237, 0.5), rgba(100, 149, 237, 0.5)),
+                url("../imagens/cozinha.jpg"); /* Separar gradiente e imagem de fundo */
+    background-size: cover; /* Para cobrir toda a área do cabeçalho com a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 100%;
+    height: 300px; /* Aumentei a altura para tornar o cabeçalho mais imponente */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 48px;
+    margin-bottom: 10px; /* Espaço entre o título e o subtitulo */
+}
+
+.subtitulo {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espaço entre o subtitulo e o botão */
+}
+
+.botao {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+.botao:hover {
+    background-color: #218838;
+}

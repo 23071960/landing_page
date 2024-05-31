@@ -1,0 +1,62 @@
+.subtitulo-convite, textarea {
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 100%; /* Alterado para preencher a largura do formulário */
+    margin-bottom: 15px; /* Aumentado o espaçamento entre os campos */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+
+button {
+    display: inline-block; /* Adicionado para garantir que o botão respeite a largura do conteúdo */
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.convite {
+    background: linear-gradient(rgba(100, 149, 237, 0.5), rgba(100, 149, 237, 0));
+    text-align: left;
+    width: 63%;
+    height: auto;
+    font-size: 25px;
+    padding: 20px;
+    border: 2px solid rgb(0, 102, 255);
+    border-radius: 15px;  
+    margin: 0 auto; /* Centralizar horizontalmente */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    form, .convite {
+        width: 90%; /* Reduzir a largura para melhorar a visualização em dispositivos móveis */
+    }
+
+    input, textarea {
+        width: 100%; /* Manter os inputs com largura total */
+    }
+
+    .cabeçalho {
+        height: 200px;
+    }
+
+    .carousel-section {
+        padding: 20px;
+    }
+
+    .contato {
+        margin: 20px auto;
+    }
+}
