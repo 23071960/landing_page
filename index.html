@@ -6,14 +6,12 @@
     <title>Landing page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 </head>
 <body>
     <header>
         <div class="cabeçalho">
             <h1 class="titulo">Eleve sua culinária ao próximo nível!</h1>
             <p class="subtitulo">Descubra e experimente nossas melhores receitas</p>
-            <!-- <a href="#" class="botao">Veja as receitas</a> -->
         </div>
     </header>
     <div class="spacer"></div> <!-- Espaço entre o carrossel e o formulário -->
@@ -129,18 +127,53 @@
             <input type="email" name="email" placeholder="Seu e-mail" required>
             <input type="number" name="telefone" placeholder="Seu número de telefone" required>
             <button type="submit">Enviar</button>
+            <div class="checkbox-container">
+                <input type="checkbox" id="dataConsent" class="verifica"  name="dataConsent" required>
+                <label for="dataConsent">                   
+                    Eu concordo com a <a href="#" data-toggle="modal" data-target="#lgpdModal">Política de Privacidade</a>
+                    e o uso dos meus dados conforme a LGPD.
+                </label>
+            </div>
         </form>
+    </div>
+
+    <!-- Modal LGPD -->
+    <div class="modal fade" id="lgpdModal" tabindex="-1" role="dialog" aria-labelledby="lgpdModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lgpdModalLabel">Lei Geral de Proteção de Dados (LGPD)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>A Lei Geral de Proteção de Dados (LGPD) é a legislação brasileira que regula as atividades de tratamento de dados pessoais. Ela tem como objetivo proteger os direitos fundamentais de liberdade e de privacidade, bem como o livre desenvolvimento da personalidade da pessoa natural.</p>
+                    <p>Principais pontos da LGPD:</p>
+                    <ul>
+                        <li>Transparência: As organizações devem fornecer informações claras sobre a coleta, uso e armazenamento dos dados pessoais.</li>
+                        <li>Consentimento: O consentimento do titular deve ser obtido para o tratamento de dados, salvo exceções previstas na lei.</li>
+                        <li>Finalidade: Os dados devem ser coletados para propósitos específicos, explícitos e legítimos.</li>
+                        <li>Segurança: As organizações devem garantir a proteção dos dados pessoais contra acessos não autorizados e situações acidentais ou ilícitas.</li>
+                        <li>Direitos dos Titulares: Os titulares dos dados têm o direito de acessar, corrigir, eliminar e portabilizar seus dados pessoais.</li>
+                    </ul>
+                    <p>Para mais informações, visite o <a href="https://www.gov.br/secretariageral/pt-br/assuntos/lgpd">site oficial da LGPD</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer class="rodapé">
-        <p>&copy; 2024 Domicio Pedra. Desenvolvido para os cursos 2º anos de Ads e Inf. para o Marketing
-         do Colégio Estadual Airton Senna. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Domicio Pedra. Desenvolvido para os cursos 2º anos de Ads e Inf. para o Marketing do Colégio Estadual Airton Senna. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="land.js"></script>
+    <script src="lgpd.js"></script>
 </body>
 </html>
