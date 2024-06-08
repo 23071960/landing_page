@@ -38,3 +38,31 @@ input, textarea {
 #contactForm button:hover {
     background-color: #0056b3;
 }
+/* inicio da formatação doa viso da LGPD no formulário */
+.checkbox-container {
+    background-color: rgb(195, 210, 219);
+    display: flex;
+    align-items: center;
+    padding: 2px; /* Ajuste o padding conforme necessário */
+}
+.verifica{
+display: flex;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0 2px 0 0; /* Ajusta o espaço apenas à direita do checkbox */
+    transform: scale(1.5);
+}
+
+.checkbox-container label {
+    font-weight: bold;
+    margin: 0; /* Remove margens adicionais ao redor do texto */
+    flex-grow: 1; /* Permite que o texto use mais espaço disponível */
+}
+
+.checkbox-container a {
+    color: #007bff;
+    text-decoration: underline;
+    margin: 0; /* Remove margens adicionais ao redor do link */
+}
+
