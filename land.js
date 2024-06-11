@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     console.log(data); // Adiciona esta linha para verificar os dados no console
 
-    fetch('https://script.google.com/macros/s/AKfycbw-fmaqAb8v3H8CH8mSiOyoxYxg7psByiTMs402uhHToTZ2tbD6pwSWa1MC5icihUwn/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyh4xrWE7pqrtqb5fmfJFnW6zQR0vNjw3XBx4N_F-DNkopXPg4eKXTDYx4-va7GhuiO/exec', {
         method: 'POST',
         body: new URLSearchParams(data)
     })
